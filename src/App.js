@@ -1,6 +1,7 @@
 import React,{useState,useEffect} from 'react';
 import NavBar from './components/NavBar';
 import DisplayInformation from './components/displayInformation';
+import ImageHandler from './components/ImageHandler';
 import axios from 'axios';
 import './App.css';
 
@@ -18,7 +19,7 @@ const pickLocation=(place)=>{ //reset entire data if users click on a new locati
 
 useEffect(()=>{
 axios.get(`https://rickandmortyapi.com/api/location/${location}`).then(async(response)=>{ 
-return await setName(response.data.name),setType(response.data.type),setResidents([response.data.residents],console.log(response.data))
+return await setName(response.data.name),setType(response.data.type),setResidents([response.data.residents])
 })
 .catch(error=>{console.log(error)});
 },[location])
@@ -33,7 +34,8 @@ let information={
   return (
     <div className="App">
       <NavBar locationPicked={pickLocation}></NavBar>
-      <DisplayInformation information={information} ></DisplayInformation>
+      <DisplayInformation information={information}></DisplayInformation>
+      <ImageHandler id={location}></ImageHandler>
     </div>
   );
 }
