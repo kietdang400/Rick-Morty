@@ -28,7 +28,7 @@ props.locationPicked(place);
   <a href="#contact" onClick={()=>{selectPlace(3)}} value='3'>Citadel of Ricks</a>
   <a href="#about" onClick={()=>{selectPlace(78)}} value='78'>Snake Planet</a>
   <a href="#about" onClick={()=>{selectPlace(28)}} value='28'>Unity’s Planet</a>
-  <a href="#about" onClick={()=>{selectPlace('')}} value=''>Rick’s Toilet Planet</a>
+  <a href="#about" onClick={()=>{selectPlace(7)}} value='7'>Immortality Field Resort</a>
   <a href="#about" onClick={()=>{selectPlace(47)}} value='47'>Pluto</a>
     <a href="#about" onClick={()=>{selectPlace(9)}} value='9'>Purge Planet</a>
     <a href="#about" onClick={()=>{selectPlace(35)}} value='35'>Planet Squanch</a>
