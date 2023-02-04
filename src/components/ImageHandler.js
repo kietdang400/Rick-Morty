@@ -53,8 +53,6 @@ switch(props.id){
 }
 },[props.id])
 
-
-//<img src={image} alt={noImage}></img>
     return(
         <div className='ImageHandler'>
            <img className="image" src={image} alt={noImage}></img>

@@ -21,13 +21,9 @@ setCharacters([])
     },[props.information.Residents[0]])
 
 
-//console.log(characters);
+console.log(characters);
 // population={props.information.Residents[0].length} population is unknown when DOM renders causes page to not load
-
-    return(
-        <div className="DisplayInformation">
-        <OverView location={props.information.LocationName}></OverView>
-        {characters.map(character=>{
+/*{characters.map(character=>{
         return<Character 
         key={Math.random()*1000}
         name={character.data.name} 
@@ -35,7 +31,10 @@ setCharacters([])
         image={character.data.image}
         gender={character.data.gender}
         status={character.data.status}>
-        </Character>})}
+        </Character>})}*/
+    return(
+        <div className="DisplayInformation">
+        <OverView location={props.information.LocationName} characters={characters}></OverView>
         <Cards type={props.information.Type} dimension={props.information.Dimension} ></Cards>
         </div>
     )
