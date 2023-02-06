@@ -1,8 +1,10 @@
 import React,{useState,useEffect} from "react";
+import { CarouselProvider,Slider,Slide,ButtonBack,ButtonNext} from "pure-react-carousel";
+import 'pure-react-carousel/dist/react-carousel.es.css';
 import Character from "./character";
 import './OverView.css'
 
-const OverView=(props)=>{
+const OverView=(prop)=>{
 
 const[descriptionOverView,setDescriptionOverView]=useState('');
 const[descriptionSummary,setDescriptionSummary]=useState('');
@@ -11,7 +13,7 @@ const[SummaryButton,setSummaryButton]=useState(false);
 const[CharacterButton,setCharacterButton]=useState(false);
 
 useEffect(()=>{
-switch(props.location){
+switch(prop.location){
     case "Earth (C-137)":
 setDescriptionOverView("Earth C-137: The universe in which “our” Rick and Morty originated, which they abandoned after they “Cronenberg’d” it.This is the universe the original Jerry, Summer, and Beth currently inhabit.");
 setDescriptionSummary("Dimension C-137 is first mentioned in 'Close Rick-Counters of the Rick Kind', by the Council of Ricks. Morty also refers to himself as 'from Dimension C-137', unaware that he is not from the same dimension as Rick.Dimension C-137 is briefly mentioned in 'Mortynight Run', when Rick is asked to identify his home dimension for identification purposes when returning to pick up his Jerry. Because Jerry is not from Rick's home dimension of C-137, Rick marks him as 'N/A'. This might mean that Rick is (or was) uncertain of their current dimension's official alphanumeric identification.");    
@@ -45,33 +47,24 @@ setDescriptionOverView("A luxury resort built inside an immortality field.")
 setDescriptionSummary("The area in which the resort resides was once the kingdom of the Blue Ape Aliens. The kingdom was at one point usurped by another alien race using weapons supplied by Rick, enslaving the native aliens to work at the resort.By Morty's wish, Rick brought Jerry to this resort in order to cheer him up. Once they had arrived Rick was attacked and killed by Shnoopy Bloopers, who in turn was killed by Rick; before resurrecting back to life due to the immortality field. Jerry would later be forced into a backroom by Risotto Groupon and his henchmen to be included in a plot against Rick. This lead Jerry and Rick onto the Whirly Dirly, a popular theme park ride at the resort, where Risotto had positioned assassins to kill Rick. Jerry would then get cold feet and save Rick on the ride, with Rick defeating both Risotto's assassins and henchmen, as well as destroying the immortality field.");   
 break;
 }
-},[props.location])
+},[prop.location])
 
 
-/*let slideIndex = 0;
-showSlides();
+const[index,setIndex]=useState(0);
 
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-}*/ 
 
     return(
         <div className="Overview">
-            <h1 className="planet-name">{props.location}</h1>
+            <h1 className="planet-name">{prop.location}</h1>
             {descriptionButton&&<div className="description">{descriptionOverView}</div>}
             {SummaryButton&&<div className="summary">{descriptionSummary}</div>}
 
-{CharacterButton&&<div class="slideshow-container">{props.characters.map(character=>{
-return<div className="mySlides fade">
-        <Character 
+{CharacterButton&&
+<CarouselProvider naturalSlideWidth={100}
+naturalSlideHeight={120}
+totalSlides={100}>
+<Slider>{prop.characters.map(character=>{
+return<Slide><Character 
         key={Math.random()*1000}
         name={character.data.name} 
         species={character.data.species} 
@@ -79,11 +72,13 @@ return<div className="mySlides fade">
         gender={character.data.gender}
         status={character.data.status}>
         </Character>
-  <a class="prev" onclick="plusSlides(-1)"></a>
-  <a class="next" onclick="plusSlides(1)"></a>
-</div>})}
-</div>}
-
+     </Slide>
+})}
+</Slider>
+<ButtonBack>Back</ButtonBack>
+<ButtonNext>Next</ButtonNext>
+</CarouselProvider>
+}
         <button onClick={()=>{ return setDescriptionButton(true), setSummaryButton(false), setCharacterButton(false)}}>OverView</button>
         <button onClick={()=>{return setDescriptionButton(false), setSummaryButton(true), setCharacterButton(false)}}>Summary</button>
         <button onClick={()=>{return setDescriptionButton(false), setSummaryButton(false), setCharacterButton(true)}}>Characters</button>
