@@ -2,6 +2,7 @@ import React,{useState,useEffect} from "react";
 import { CarouselProvider,Slider,Slide,ButtonBack,ButtonNext} from "pure-react-carousel";
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import Character from "./character";
+import Card from "./cards";
 import './OverView.css'
 
 const OverView=(prop)=>{
@@ -43,7 +44,7 @@ setDescriptionOverView("It is the planet where Squanchy comes from and it is 6,0
 setDescriptionSummary("Birdperson and Tammy, for unknown reasons, decided to hold their wedding on this planet. They invited a large group of friends and acquaintances to this special occasion, all of which were criminals in the eyes of the Galactic Federation. The Smith Family attended the wedding against Rick's wishes. Squanchy wed Birdperson and Tammy on a beach before a setting star.Later at the wedding reception, Tammy exposed herself as an undercover agent for the Galactic Federation and shot Birdperson before Gromflomites crashed in through the roof and raided the event. The ensuing shootout killed most of the guests, with Squanchy's fate unknown. The Smith family managed to escape in a flying catering van.");   
 break;
      case "Immortality Field Resort":
-setDescriptionOverView("A luxury resort built inside an immortality field.")
+setDescriptionOverView("A luxury resort built inside an immortality field.  Rick brought Jerry here in the episode 'The Whirly Dirly Conspiracy' on Morty's request.")
 setDescriptionSummary("The area in which the resort resides was once the kingdom of the Blue Ape Aliens. The kingdom was at one point usurped by another alien race using weapons supplied by Rick, enslaving the native aliens to work at the resort.By Morty's wish, Rick brought Jerry to this resort in order to cheer him up. Once they had arrived Rick was attacked and killed by Shnoopy Bloopers, who in turn was killed by Rick; before resurrecting back to life due to the immortality field. Jerry would later be forced into a backroom by Risotto Groupon and his henchmen to be included in a plot against Rick. This lead Jerry and Rick onto the Whirly Dirly, a popular theme park ride at the resort, where Risotto had positioned assassins to kill Rick. Jerry would then get cold feet and save Rick on the ride, with Rick defeating both Risotto's assassins and henchmen, as well as destroying the immortality field.");   
 break;
 }
@@ -52,18 +53,22 @@ break;
 
 const[index,setIndex]=useState(0);
 
+prop.population(prop.characters.length)
 
+console.log()
     return(
         <div className="Overview">
-            <h1 className="planet-name">{prop.location}</h1>
+          <div className="border">
+            <h1 className="planet-name"><u>{prop.location}</u></h1>
             {descriptionButton&&<div className="description">{descriptionOverView}</div>}
             {SummaryButton&&<div className="summary">{descriptionSummary}</div>}
 
 {CharacterButton&&
 <CarouselProvider naturalSlideWidth={100}
 naturalSlideHeight={120}
-totalSlides={100}>
-<Slider>{prop.characters.map(character=>{
+totalSlides={prop.characters.length}
+className="carousel">
+<Slider className="slider">{prop.characters.map(character=>{
 return<Slide><Character 
         key={Math.random()*1000}
         name={character.data.name} 
@@ -75,13 +80,15 @@ return<Slide><Character
      </Slide>
 })}
 </Slider>
-<ButtonBack>Back</ButtonBack>
-<ButtonNext>Next</ButtonNext>
+<ButtonBack className="button-back">Back</ButtonBack>
+<ButtonNext className="button-next">Next</ButtonNext>
 </CarouselProvider>
 }
-        <button onClick={()=>{ return setDescriptionButton(true), setSummaryButton(false), setCharacterButton(false)}}>OverView</button>
-        <button onClick={()=>{return setDescriptionButton(false), setSummaryButton(true), setCharacterButton(false)}}>Summary</button>
-        <button onClick={()=>{return setDescriptionButton(false), setSummaryButton(false), setCharacterButton(true)}}>Characters</button>
+        <button className="OverView-Button"onClick={()=>{ return setDescriptionButton(true), setSummaryButton(false), setCharacterButton(false)}}>OverView</button>
+        <button className="OverView-Button"onClick={()=>{return setDescriptionButton(false), setSummaryButton(true), setCharacterButton(false)}}>Summary</button>
+        <button className="OverView-Button"onClick={()=>{return setDescriptionButton(false), setSummaryButton(false), setCharacterButton(true)}}>Characters</button>
+</div>
+        <Card type1={prop.type} dimension1={prop.dimension} population={prop.characters.length}></Card>
         </div>
     )
 }

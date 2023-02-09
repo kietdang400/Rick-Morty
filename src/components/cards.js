@@ -5,10 +5,11 @@ const card=(props)=>{
 
     return(
         <div className="card">
-            <div className="Type"><label>Type: </label>{props.type}</div>
-            <div className="Dimension"><label>Dimension: </label>{props.dimension}</div>
-            <div className="Population"><label>Population: </label>{props.population}</div>
-            
+            <div className="grid-container">
+            <div className="grid-items"><label className="title">Type: </label>{props.type1}</div>
+            <div className="grid-items"><label className="title">Dimension: </label>{props.dimension1}</div>
+            <div className="grid-items"><label className="title">Population: </label>{props.population}</div>
+            </div>
         </div>
     )
 }

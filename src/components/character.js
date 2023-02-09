@@ -1,5 +1,5 @@
 import React,{useState} from "react"
-
+import './character.css'
 const Character=(props)=>{
 
 
@@ -8,10 +8,10 @@ const Character=(props)=>{
         <div className='character'>
             <img src={props.image} alt={props.name}></img>
             <div className="info-container">
-                <label>Name:</label> <div>{props.name}</div>
-                <label>Species:</label> <div>{props.species}</div>
-                <label>Gender:</label> <div>{props.gender}</div>
-                <label>Status:</label> <div>{props.status}</div>
+                <label className="labels"><u>Name</u></label> <div className="info">{props.name}</div>
+                <label className="labels"><u>Species</u></label> <div className="info">{props.species}</div>
+                <label className="labels"><u>Gender</u></label> <div className="info">{props.gender}</div>
+                <label className="labels"><u>Status:</u></label> <div className="info">{props.status}</div>
             </div>
         </div>
     )

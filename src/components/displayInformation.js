@@ -1,13 +1,12 @@
 import React,{useEffect,useState} from "react";
 import OverView from "./OverView";
-import Character from "./character"; 
 import Cards from "./cards";
 import axios, { all } from "axios";
 import './displayInformation.css'
 const DisplayInformation=(props)=>{
 
     const[characters,setCharacters]=useState([]);
-   
+   const[population,setPopulation]=useState(0);
 useEffect(()=>{
 setCharacters([])
 },[props.information.LocationName])
@@ -20,8 +19,10 @@ setCharacters([])
         }
     },[props.information.Residents[0]])
 
+const populationFunction=(population)=>{
+setPopulation(population)
+}
 
-console.log(characters);
 // population={props.information.Residents[0].length} population is unknown when DOM renders causes page to not load
 /*{characters.map(character=>{
         return<Character 
@@ -32,10 +33,18 @@ console.log(characters);
         gender={character.data.gender}
         status={character.data.status}>
         </Character>})}*/
+        //  
     return(
         <div className="DisplayInformation">
-        <OverView location={props.information.LocationName} characters={characters}></OverView>
-        <Cards type={props.information.Type} dimension={props.information.Dimension} ></Cards>
+        <OverView 
+        location={props.information.LocationName} 
+        characters={characters} 
+        population={populationFunction} 
+        type={props.information.Type}
+        dimension={props.information.Dimension}
+        >
+        </OverView>
+        
         </div>
     )
 }

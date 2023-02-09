@@ -1,5 +1,27 @@
-.image{
-    height:415px;
-    width:35%;
-border-radius: 100%;
+
+/* for-phone-only */
+@media (max-width: 599px) {
+.image {
+        height: 450px;
+        width: 100%;
+        border-radius: 100%;
+        margin-top: 4%;
+        margin-bottom: 4%;
+    }
 }
+
+
+/* for-tablet-portrait-up */
+@media (min-width: 600px) {}
+
+
+/* for-tablet-landscape-up */
+@media (min-width: 900px) {}
+
+
+/* for-desktop-up */
+@media (min-width: 1200px) {}
+
+
+/* for-medium-desktop-up */
+@media (min-width: 1400px) {}
