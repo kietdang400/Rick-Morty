@@ -8,26 +8,52 @@
 .labels {
     color: yellow;
     font-weight: 1000;
-    font-size: larger;
+    font-size: large;
    
 }
 
 .info {
-    font-size: large;
-    margin-bottom: 15%;
+    font-size: medium;
+    margin-bottom: 10%;
 }
 /* for-phone-only */
 @media (max-width: 599px) {
     .info-container{
         top:350px;
         text-align: center;
-        align-items: center;
+       display:grid;
+       grid-template-columns: auto auto ;
+       column-gap: 10px;
+       margin-left: 3%;
+    
     }
+
 }
 
 
 /* for-tablet-portrait-up */
-@media (min-width: 600px) {}
+@media (min-width: 600px) {
+    .info-container {
+            top: 350px;
+            text-align: center;
+            display: grid;
+            grid-template-columns: auto auto;
+            column-gap: 10px;
+            margin-left: 3%;
+    
+        }
+                .labels {
+                    color: yellow;
+                    font-weight: 1000;
+                    font-size: larger;
+        
+                }
+        
+                .info {
+                    font-size: large;
+                    margin-bottom: 10%;
+                }
+}
 
 
 /* for-tablet-landscape-up */

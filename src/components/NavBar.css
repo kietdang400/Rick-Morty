@@ -33,7 +33,7 @@ border-bottom: 1px solid rgb(177, 176, 176);
     display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1199px) {
     .topnav a:not(:first-child) {
         display: none;
     }
@@ -44,7 +44,7 @@ border-bottom: 1px solid rgb(177, 176, 176);
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1199px) {
     .topnav.responsive {
         position: relative;
     }

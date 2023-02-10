@@ -1,14 +1,6 @@
 
 /* for-phone-only */
 @media (max-width: 599px) {
-
-    .Overview {
-        position: relative;
-        top: -25px;
-        border: 1px solid white;
-        margin-top: 3%;
-    }
-
 }
 
 
