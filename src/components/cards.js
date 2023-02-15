@@ -9,12 +9,12 @@ const card=(props)=>{
             <div className="grid-container">
             <div className="grid-items card1"><label className="title"> Type </label>
             <div className="content">{props.type1}</div>
-            <div>String temp=null System.out.println(File not found!)</div>
+            <div className="code">String temp=null System.out.println(File not found!)</div>
             </div>
             <div className="grid-items"><label className="title">Dimension: </label><div className="content">{props.dimension1}</div>
-            <div>String temp=null System.out.println(File not found!)</div></div>
+            <div className="code">String stable=null console.log("No return")</div></div>
             <div className="grid-items"><label className="title">Population: </label><div className="content">{props.population}</div>
-            <div>String temp=null System.out.println(File not found!)</div></div>
+            <div className="code">String variety=null System.out.println(File not found!)</div></div>
             </div>
         </div>
     )

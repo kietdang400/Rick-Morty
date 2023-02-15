@@ -9,6 +9,7 @@
 .border{
     border-bottom: 1px solid white;
         margin-top: 3%;
+        margin-left: 2%;
 }
 .OverView-Button{
     background-color:#62a4ab;
@@ -177,8 +178,8 @@ position: relative;
     
         .carousel {
             position: relative;
-            left: 38%;
-            width: 35%;
+            left: 36%;
+            width: 40%;
         }
     
         .carousel .button-back {

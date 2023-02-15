@@ -21,18 +21,29 @@ background-color: rgb(80, 80, 80);
 }
 
 .grid-items .title{
-    color: rgb(3, 202, 3);
+    color: rgb(51, 255, 0);
     text-align: center;
     font-weight: 600;
     font-size: larger;
 }
 
 .grid-items .content{
-    color: rgb(3, 202, 3);
+    color: rgb(51, 255, 0);
+    margin-bottom: 5%;
 }
+
+.grid-items .code{
+    color: rgb(3, 255, 0);
+    font-size:xx-small;
+}
+
 
 /* for-phone-only */
 @media (max-width: 599px) {
+    .grid-container{
+grid-template-columns: 28% auto auto;
+    }
+
 .grid-items {
     position:relative;
     left:89%;
@@ -43,7 +54,8 @@ background-color: rgb(80, 80, 80);
     width:160%;
     height:60%;
     padding-top: 4px;
-    left:40%;
+    padding-bottom: 25px;
+    left:62%;
 }
 
 }
@@ -51,6 +63,10 @@ background-color: rgb(80, 80, 80);
 
 /* for-tablet-portrait-up */
 @media (min-width: 600px) {
+
+    .grid-container {
+            grid-template-columns: 23% auto auto;
+        }
     .grid-items {
             position: relative;
             left: 160%;
@@ -60,9 +76,9 @@ background-color: rgb(80, 80, 80);
             position: relative;
             top: 5px;
             width: 160%;
-            height: 60%;
+            height: 67%;
             padding-top: 4px;
-            left: 170%;
+            left: 160%;
         }
 }
 
@@ -70,21 +86,22 @@ background-color: rgb(80, 80, 80);
 /* for-tablet-landscape-up */
 @media (min-width: 900px) {
     .grid-container {
-        column-gap: 55px;
+        column-gap: 5px;
+        grid-template-columns: 35% 35% 35%;
     }
     .grid-items {
             position: relative;
-            left: 170%;
+            left: 140%;
             width: 70%;
         }
     
         .grid-items.card1 {
             position: relative;
-            top: 5px;
+            top: -2px;
             width: 90%;
-            height: 50%;
+            height: 65%;
             padding-top: 4px;
-            left: 255%;
+            left: 120%;
         }
 }
 
@@ -93,30 +110,36 @@ background-color: rgb(80, 80, 80);
 @media (min-width: 1200px) {
     .grid-container {
             column-gap: 150px;
+            grid-template-columns: 30% 30% 30%;
         }
     
         .grid-items {
             position: relative;
-            left: 110%;
+            left: 90%;
             width: 140%;
             height:100%;
-            top:-160px;
+            top:-140px;
             font-size:x-large;
         }
     
         .grid-items.card1 {
             position: relative;
-            top: -160px;
+            top: -140px;
             width: 140%;
             height: 105%;
             padding-top: 4px;
-            left: 110%;
+            left: 90%;
             font-size:x-large;
         }
 
         .grid-items .content{
             margin-top: 5%;
             margin-bottom: -10%;
+        }
+
+        .grid-items .code{
+            position:  relative;
+            top:55px;
         }
 }
 
