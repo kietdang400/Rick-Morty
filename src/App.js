@@ -2,18 +2,25 @@ import React,{useState,useEffect} from 'react';
 import NavBar from './components/NavBar';
 import DisplayInformation from './components/displayInformation';
 import ImageHandler from './components/ImageHandler';
-import Card from './components/cards';
+import Portal from "./IMG/Portal Gif.gif";
 import axios from 'axios';
 import './App.css';
 
 function App() {
 
+  const[load,setLoad]=useState(false);
+
+
+
+  
+
 const[location,selectLocation]=useState('');
-const[Name,setName]=useState('');
-const[type,setType]=useState('');
-const[locationName,setLocationName]=useState('');
-const[dimension,setDimension]=useState('');
+const[Name,setName]=useState('N/A');
+const[type,setType]=useState('N/A');
+const[locationName,setLocationName]=useState('Central Finite Curve');
+const[dimension,setDimension]=useState('N/A');
 const[residents,setResidents]=useState([]);
+
 
 
 const pickLocation=(place)=>{ //reset entire data if users click on a new location
@@ -30,8 +37,6 @@ setDimension(response.data.dimension),  console.log(response.data))
 .catch(error=>{console.log(error)});
 },[location])
 
-
-
 let information={
   id:location,
   LocationName:locationName,
@@ -41,15 +46,20 @@ let information={
   Residents:[...residents]
 }
 
-
+useEffect(()=>{
+setLoad(true);
+setTimeout(setLoad,2000);
+  },[])
 
 //console.log(residents);
   return (
+    
     <div className="App">
-      <NavBar locationPicked={pickLocation}></NavBar>
-      <ImageHandler id={location}></ImageHandler>
-      <DisplayInformation information={information}></DisplayInformation>
+      {load?<img className="portal" src={Portal} alt="portal"></img>:<NavBar locationPicked={pickLocation}></NavBar>}
+      {!load&&<ImageHandler id={location}></ImageHandler>}
+      {!load&&<DisplayInformation information={information}></DisplayInformation>}
     </div>
+    
   );
 }
 

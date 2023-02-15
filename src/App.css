@@ -1,34 +1,90 @@
 .App {
 position: absolute;
 background-image: url("./IMG/space-background.png");
+height:fit-content;
+
+}
+
+.portal {
+    display:flex;
+    align-items: center;
 }
 
 /* for-phone-only */
 @media (max-width: 599px) {
 .App{
-height: fit-content;
     width: 100%;
-   
+}
+
+.portal{
+    position: relative;
+    width:50%;
+    height:50%;
+    left:23%;
+    top:-10px;
+    padding-top: 42%;
+    padding-bottom:48%;
 }
 }
 
 
 /* for-tablet-portrait-up */
 @media (min-width: 600px) {
-    .App {
-            height: fit-content;
-            width: 100%;
-    
-        }
+.App {
+        width: 100%;
+    }
+
+   .portal {
+       position: relative;
+       width: 50%;
+       height: 50%;
+       left: 23%;
+       top: -20px;
+       padding-top: 25%;
+       padding-bottom: 23%;
+   }
+
 }
 
 
 /* for-tablet-landscape-up */
-@media (min-width: 900px) {}
+@media (min-width: 900px) {
+.App {
+        height: fit-content;
+        width: 100%;
+    }
+
+   .portal {
+       position: relative;
+       width: 50%;
+       height: 50%;
+       left: 23%;
+       top: -10px;
+       padding-top: 20%;
+       padding-bottom: 10%;
+   }
+   
+}
 
 
 /* for-desktop-up */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+.App {
+        height: fit-content;
+        width: 100%;
+    }
+
+        .portal {
+            position: relative;
+            width: 30%;
+            height: 30%;
+            left: 33%;
+            top: -3px;
+            padding-top: 10%;
+            padding-bottom: 12%;
+        }
+   
+}
 
 
 /* for-medium-desktop-up */

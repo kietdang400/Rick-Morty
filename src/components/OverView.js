@@ -7,8 +7,8 @@ import './OverView.css'
 
 const OverView=(prop)=>{
 
-const[descriptionOverView,setDescriptionOverView]=useState('');
-const[descriptionSummary,setDescriptionSummary]=useState('');
+const[descriptionOverView,setDescriptionOverView]=useState('The Central Finite Curve was designed by the precursors of what would later become the Council of Ricks on The Citadel to wall off the infinite amount of universes in which Rick is the smartest person alive from the rest of the infinite multiverse.');
+const[descriptionSummary,setDescriptionSummary]=useState('After Evil Morty breached the Curve and accessed the true multiverse and despite a hologram he activated from his wrist showing all of the universes that make up the Curve popping and disappearing in "Rickmurai Jack", it is currently unknown what the exact fate of the Curve is following these events. The Central Finite Curve was possibly built long before Rick C-137 constructed his Portal Gun.');
 const[descriptionButton,setDescriptionButton]=useState(true);
 const[SummaryButton,setSummaryButton]=useState(false);
 const[CharacterButton,setCharacterButton]=useState(false);
@@ -51,15 +51,16 @@ break;
 },[prop.location])
 
 
-const[index,setIndex]=useState(0);
+const[defaultTitle,setDefaultTitle]=useState("Central Finite Curve");
 
 prop.population(prop.characters.length)
 
-console.log()
+console.log(prop.location)
+console.log(prop.LocationName)
     return(
         <div className="Overview">
           <div className="border">
-            <h1 className="planet-name"><u>{prop.location}</u></h1>
+            <h1 className="planet-name"><u>{prop.location===undefined?defaultTitle:prop.location}</u></h1>
             {descriptionButton&&<div className="description">{descriptionOverView}</div>}
             {SummaryButton&&<div className="summary">{descriptionSummary}</div>}
 

@@ -18,6 +18,12 @@
     color:yellow;
 }
 
+.planet-name{
+    margin-bottom: 3%;
+}
+
+
+
 
 /* for-phone-only */
 @media (max-width: 599px) {
@@ -171,8 +177,8 @@ position: relative;
     
         .carousel {
             position: relative;
-            left: 37%;
-            width: 40%;
+            left: 38%;
+            width: 35%;
         }
     
         .carousel .button-back {
@@ -180,7 +186,7 @@ position: relative;
             height: 30px;
             border-radius: 30%;
             position: relative;
-            left: 2%;
+            left: 3%;
         }
     
         .carousel .button-next {
@@ -188,13 +194,77 @@ position: relative;
             height: 30px;
             border-radius: 30%;
             position: relative;
-            left: 10%;
+            left: 13%;
         }
 }
 
 
 /* for-desktop-up */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    .Overview {
+            top: 0px;
+            width: 100%;
+            margin-top: -10%;
+        }
+    
+        .planet-name {
+            text-align: center;
+        }
+    
+        .description {
+            text-align: center;
+            position: relative;
+            left: 25%;
+            width: 50%;
+        }
+    
+        .summary {
+            text-align: left;
+            position: relative;
+            left: 26.5%;
+            width: 50%;
+        }
+    
+        .OverView-Button {
+            position: relative;
+            left: 30%;
+            margin-right: 2%;
+            margin-top: 3%;
+            margin-bottom: 3%;
+            height: 30px;
+            width: 11%;
+        }
+    
+        .carousel {
+            position: relative;
+            left: 31%;
+            width: 55%;
+        }
+    
+        .carousel .button-back {
+            width: 25%;
+            height: 30px;
+            border-radius: 30%;
+            position: relative;
+            left: 3%;
+        }
+    
+        .carousel .button-next {
+            width: 25%;
+            height: 30px;
+            border-radius: 30%;
+            position: relative;
+            left: 13%;
+        }
+        .border{
+            position:relative;
+            top:-320px;
+            left:50%;
+            width: 50%;
+            border-bottom: none;
+            
+        }
+}
 
 
 /* for-medium-desktop-up */

@@ -7,11 +7,12 @@ import Immortality from'../IMG/Immmortality.jpg';
 import Snake from '../IMG/Snake_Planet.jpg';
 import Unity from '../IMG/Unity.jpg';
 import PlanetSquanch from '../IMG/Planet Squanch.jpg';
+import Central from '../IMG/Central Finite.jpg';
 import './ImageHandler.css'
 
 const ImageHandler=(props)=>{
 
-const[image,setImage]=useState('');
+const[image,setImage]=useState(Central);
 const[noImage,setNoImage]=useState('');
 
 console.log(props.id) // rerenders this image depending on how many renders there are.

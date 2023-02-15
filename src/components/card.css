@@ -6,25 +6,29 @@
 
 .grid-container{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 30% 30% 30%;
     column-gap: 10px;
 }
 
 .grid-items{
-    border: 1px solid white;
+    border: 5px solid silver;
     padding: 10px;
     margin-top: 10%;
     margin-bottom: 10%;
     text-align: center;
     font-size: large;
-   
+background-color: rgb(80, 80, 80);
 }
 
 .grid-items .title{
-    color:yellow;
+    color: rgb(3, 202, 3);
     text-align: center;
     font-weight: 600;
     font-size: larger;
+}
+
+.grid-items .content{
+    color: rgb(3, 202, 3);
 }
 
 /* for-phone-only */
@@ -70,7 +74,7 @@
     }
     .grid-items {
             position: relative;
-            left: 160%;
+            left: 170%;
             width: 70%;
         }
     
@@ -80,13 +84,41 @@
             width: 90%;
             height: 50%;
             padding-top: 4px;
-            left: 275%;
+            left: 255%;
         }
 }
 
 
 /* for-desktop-up */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    .grid-container {
+            column-gap: 150px;
+        }
+    
+        .grid-items {
+            position: relative;
+            left: 110%;
+            width: 140%;
+            height:100%;
+            top:-160px;
+            font-size:x-large;
+        }
+    
+        .grid-items.card1 {
+            position: relative;
+            top: -160px;
+            width: 140%;
+            height: 105%;
+            padding-top: 4px;
+            left: 110%;
+            font-size:x-large;
+        }
+
+        .grid-items .content{
+            margin-top: 5%;
+            margin-bottom: -10%;
+        }
+}
 
 
 /* for-medium-desktop-up */
