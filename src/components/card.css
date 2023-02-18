@@ -17,18 +17,18 @@
     margin-bottom: 10%;
     text-align: center;
     font-size: large;
-background-color: rgb(80, 80, 80);
+background-color: transparent;
 }
 
 .grid-items .title{
-    color: rgb(51, 255, 0);
+    color: #f0e14a;
     text-align: center;
     font-weight: 600;
     font-size: larger;
 }
 
 .grid-items .content{
-    color: rgb(51, 255, 0);
+    color: white;
     margin-bottom: 5%;
 }
 

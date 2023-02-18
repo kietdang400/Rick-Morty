@@ -2,6 +2,7 @@ import React,{useState,useEffect} from 'react';
 import NavBar from './components/NavBar';
 import DisplayInformation from './components/displayInformation';
 import ImageHandler from './components/ImageHandler';
+import ParralaxEffect from './components/ParralaxEffect';
 import Portal from "./IMG/Portal Gif.gif";
 import axios from 'axios';
 import './App.css';
@@ -58,6 +59,7 @@ setTimeout(setLoad,2000);
       {load?<img className="portal" src={Portal} alt="portal"></img>:<NavBar locationPicked={pickLocation}></NavBar>}
       {!load&&<ImageHandler id={location}></ImageHandler>}
       {!load&&<DisplayInformation information={information}></DisplayInformation>}
+      <div><ParralaxEffect information={information}></ParralaxEffect></div>
     </div>
     
   );

@@ -13,6 +13,8 @@
 }
 .OverView-Button{
     background-color:#62a4ab;
+   padding-top: 1%;
+padding-bottom: 3%;
 }
 
 .planet-name{
@@ -248,6 +250,7 @@ position: relative;
             border-radius: 30%;
             position: relative;
             left: 3%;
+            top:-30px;
         }
     
         .carousel .button-next {
@@ -256,12 +259,13 @@ position: relative;
             border-radius: 30%;
             position: relative;
             left: 13%;
+            top: -30px;
         }
         .border{
             position:relative;
             top:-320px;
             left:50%;
-            width: 50%;
+            width: 47%;
             border-bottom: none;
             
         }
