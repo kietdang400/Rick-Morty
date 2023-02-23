@@ -55,8 +55,7 @@ const[defaultTitle,setDefaultTitle]=useState("Central Finite Curve");
 
 prop.population(prop.characters.length)
 
-console.log(prop.location)
-console.log(prop.LocationName)
+
     return(
         <div className="Overview">
           <div className="border">
@@ -85,7 +84,7 @@ return<Slide><Character
 <ButtonNext className="button-next">Next</ButtonNext>
 </CarouselProvider>
 }
-        <button className="OverView-Button"onClick={()=>{ return setDescriptionButton(true), setSummaryButton(false), setCharacterButton(false)}}>OverView</button>
+        <button className="OverView-Button"onClick={()=>{return setDescriptionButton(true), setSummaryButton(false), setCharacterButton(false)}}>OverView</button>
         <button className="OverView-Button"onClick={()=>{return setDescriptionButton(false), setSummaryButton(true), setCharacterButton(false)}}>Summary</button>
         <button className="OverView-Button"onClick={()=>{return setDescriptionButton(false), setSummaryButton(false), setCharacterButton(true)}}>Characters</button>
 </div>

@@ -33,7 +33,8 @@ setPopulation(population)
         gender={character.data.gender}
         status={character.data.status}>
         </Character>})}*/
-        //  
+        // 
+        
     return(
         <div className="DisplayInformation">
         <OverView 

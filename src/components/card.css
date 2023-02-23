@@ -1,7 +1,6 @@
 .card{
     width: 50%;
     color:white;
-    
 }
 
 .grid-container{
@@ -21,10 +20,12 @@ background-color: transparent;
 }
 
 .grid-items .title{
+    position:relative;
     color: #f0e14a;
     text-align: center;
     font-weight: 600;
     font-size: larger;
+    
 }
 
 .grid-items .content{
@@ -109,38 +110,45 @@ grid-template-columns: 28% auto auto;
 /* for-desktop-up */
 @media (min-width: 1200px) {
     .grid-container {
-            column-gap: 150px;
+            column-gap: 180px;
             grid-template-columns: 30% 30% 30%;
+           
         }
     
         .grid-items {
             position: relative;
             left: 90%;
             width: 140%;
-            height:100%;
-            top:-140px;
+            height:120%;
+            top:-125px;
             font-size:x-large;
         }
     
         .grid-items.card1 {
             position: relative;
-            top: -140px;
+            top: -125px;
             width: 140%;
-            height: 105%;
+            height: 125%;
             padding-top: 4px;
             left: 90%;
             font-size:x-large;
         }
 
         .grid-items .content{
-            margin-top: 5%;
+            margin-top: 15%;
             margin-bottom: -10%;
+            font-size: xx-large;
+            font-weight: 700;
         }
 
-        .grid-items .code{
-            position:  relative;
-            top:55px;
-        }
+     .card{
+        margin-bottom: 30%;
+     }
+         .grid-items .title{
+            top:19%;
+            font-size: xx-large;
+                font-weight: 700;
+         }
 }
 
 

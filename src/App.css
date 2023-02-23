@@ -83,7 +83,35 @@ height:fit-content;
             padding-top: 10%;
             padding-bottom: 12%;
         }
-   
+.arrow {
+    position:absolute;
+    top:1435px;
+    left:48%;
+    width:1.55%;
+   height: 30px;
+    border: solid #f0e14a;
+    border-width: 0 10px 10px 0;
+    display: inline-block;
+    padding: 3px;
+    
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+
+.text{
+    position:absolute;
+    top: 1350px;
+        left: 42%;
+        color: #f0e14a;
+        font-size: xxx-large; 
+        font-weight: 900;  
+        
+}
+ 
 }
 
 
