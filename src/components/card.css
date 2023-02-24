@@ -10,7 +10,7 @@
 }
 
 .grid-items{
-    border: 5px solid silver;
+    border: 5px solid #62a4ab;
     padding: 10px;
     margin-top: 10%;
     margin-bottom: 10%;
@@ -142,7 +142,7 @@ grid-template-columns: 28% auto auto;
         }
 
      .card{
-        margin-bottom: 30%;
+        margin-bottom: 33%;
      }
          .grid-items .title{
             top:19%;

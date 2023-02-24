@@ -147,28 +147,28 @@ useEffect(()=>{
 console.log()
     return(
         <div className="Parralax">
-            <Parallax pages={3} className="parralax" style={{backgroundImage:`url(${spaceBackGround})`}}>
-                <ParallaxLayer className="parralaxLayer"offset={0} speed={1}  factor={2} style={{backgroundImage:`url(${img1})`, backgroundSize:"contain"}}>
+            <Parallax pages={2} className="parralax" style={{backgroundImage:`url(${spaceBackGround})`}}>
+                <ParallaxLayer className="parralaxLayer"offset={0} speed={1} style={{backgroundImage:`url(${img1})`, backgroundSize:"contain"}}>
                     </ParallaxLayer>
-                <ParallaxLayer offset={0.9} speed={1} factor={2} style={{backgroundImage:`url(${img2})`, backgroundSize:"contain"}} >
+                <ParallaxLayer offset={0.7} speed={1.5}  style={{backgroundImage:`url(${img2})`, backgroundSize:"contain"}} >
                     </ParallaxLayer>
-                    <ParallaxLayer offset={1.5} speed={1} factor={2} style={{backgroundImage:`url(${img3})`, backgroundSize:"contain"}}>
+                    <ParallaxLayer offset={1} speed={2} factor={1}style={{backgroundImage:`url(${img3})`, backgroundSize:"contain"}}>
                     </ParallaxLayer>
-                    <ParallaxLayer offset={2} speed={1} factor={2} style={{backgroundImage:`url(${img4})`, backgroundSize:"contain"}}>
+                    <ParallaxLayer offset={1.5} speed={3} factor={2} style={{backgroundImage:`url(${img4})`, backgroundSize:"contain"}}>
                     </ParallaxLayer>
-                    <ParallaxLayer sticky={{start:0, end:3}} style={{textAlign:'center'}}>
+                    <ParallaxLayer sticky={{start:0.2, end:3}} style={{textAlign:'center'}}>
                         <img src={Falling} alt="falling in portal"></img>
                         </ParallaxLayer>
-        <ParallaxLayer offset={0} speed={0.05}>
+        <ParallaxLayer offset={0} speed={0.01}>
           <h2 className="parralax-content">{content1}</h2>
         </ParallaxLayer>
-        <ParallaxLayer offset={0.7} speed={0.05}>
+        <ParallaxLayer offset={0.5} speed={0.05}>
          <h2>{content2}</h2>
         </ParallaxLayer>
-         <ParallaxLayer offset={1.5} speed={0.05}>
+         <ParallaxLayer offset={1} speed={0.05}>
          <h2>{content3}</h2>
         </ParallaxLayer>
-        <ParallaxLayer offset={2} speed={0.05}>
+        <ParallaxLayer offset={1.4} speed={0.05}>
          <h2>{content4}</h2>
         </ParallaxLayer>
             </Parallax>

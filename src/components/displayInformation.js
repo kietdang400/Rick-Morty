@@ -34,7 +34,9 @@ setPopulation(population)
         status={character.data.status}>
         </Character>})}*/
         // 
-        
+        const scrollDownFunction=(state)=>{
+props.scrollDown(state)
+        }
     return(
         <div className="DisplayInformation">
         <OverView 
@@ -43,6 +45,7 @@ setPopulation(population)
         population={populationFunction} 
         type={props.information.Type}
         dimension={props.information.Dimension}
+        scrollingDown={scrollDownFunction}
         >
         </OverView>
         

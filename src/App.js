@@ -52,16 +52,25 @@ setLoad(true);
 setTimeout(setLoad,2000);
   },[])
 
+  const[scrollDownState,setScrollDownState]=useState(true)
+const scrolling=(state)=>{
+setScrollDownState(state);
+}
 
-//console.log(residents);
+
   return (
     
     <div className="App">
       {load?<img className="portal" src={Portal} alt="portal"></img>:<NavBar locationPicked={pickLocation}></NavBar>}
       {!load&&<ImageHandler id={location}></ImageHandler>}
-      {!load&&<DisplayInformation information={information} ></DisplayInformation>}
-      {window.innerWidth>1200&&<div><div class="text"><p>Scroll Down</p></div><i class="arrow down"></i></div>}
-      {window.innerWidth>1200&&<div ><ParralaxEffect information={information}></ParralaxEffect></div>}
+      {!load&&<DisplayInformation information={information} scrollDown={scrolling} ></DisplayInformation>}
+      {scrollDownState&&<div className="arrowGroup">
+      <div class="text"><p>Scroll Down</p></div>
+      <i class="arrow down"></i>
+      <i class="arrowtwo down" ></i>
+      <i class="arrowthree down" ></i>
+      </div>}
+      {window.innerWidth>1200&&<div><ParralaxEffect information={information}></ParralaxEffect></div>}
     </div>
     
   );
