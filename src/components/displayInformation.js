@@ -7,6 +7,7 @@ const DisplayInformation=(props)=>{
 
     const[characters,setCharacters]=useState([]);
    const[population,setPopulation]=useState(0);
+   
 useEffect(()=>{
 setCharacters([])
 },[props.information.LocationName])
