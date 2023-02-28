@@ -102,7 +102,7 @@ useEffect(()=>{
             setIMG3(PlanetUnityP3);
             setContent3("Morty tries to persuade Unity to leave Rick.");
             setIMG4(PlanetUnityP4);
-            setContent4("Unity date a different Alien.");
+            setContent4("Unity dates a different Alien.");
         break;
           case "Pluto":
             setIMG1(PlutoP1);
