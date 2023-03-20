@@ -13,6 +13,7 @@ const[descriptionButton,setDescriptionButton]=useState(true);
 const[SummaryButton,setSummaryButton]=useState(false);
 const[CharacterButton,setCharacterButton]=useState(false);
 
+
 useEffect(()=>{
 switch(prop.location){
     case "Earth (C-137)":
@@ -57,6 +58,10 @@ prop.population(prop.characters.length)
 
 const[scrollDown,setScrollDown]=useState(true);
 prop.scrollingDown(scrollDown);
+
+
+const[scrollDisplay,setScrollDisplay]=useState(true);
+prop.ScrollDown(scrollDisplay);
     return(
         <div className="Overview">
           <div className="border">
@@ -85,9 +90,9 @@ return<Slide><Character
 <ButtonNext className="button-next">Next</ButtonNext>
 </CarouselProvider>
 }
-        <button className="OverView-Button"onClick={()=>{return setDescriptionButton(true), setSummaryButton(false),setScrollDown(true), setCharacterButton(false)}}>OverView</button>
-        <button className="OverView-Button"onClick={()=>{return setDescriptionButton(false), setSummaryButton(true),setScrollDown(true), setCharacterButton(false)}}>Summary</button>
-        <button className="OverView-Button"onClick={()=>{return setDescriptionButton(false), setSummaryButton(false),setScrollDown(false), setCharacterButton(true)}}>Characters</button>
+        <button className="OverView-Button"onClick={()=>{return setDescriptionButton(true), setSummaryButton(false),setScrollDown(true), setCharacterButton(false),setScrollDisplay(true)}}>OverView</button>
+        <button className="OverView-Button"onClick={()=>{return setDescriptionButton(false), setSummaryButton(true),setScrollDown(true), setCharacterButton(false),setScrollDisplay(false)}}>Summary</button>
+        <button className="OverView-Button"onClick={()=>{return setDescriptionButton(false), setSummaryButton(false),setScrollDown(false), setCharacterButton(true),setScrollDisplay(false)}}>Characters</button>
 </div>
         <Card type1={prop.type} dimension1={prop.dimension} population={prop.characters.length}></Card>
         </div>

@@ -87,10 +87,10 @@ height:fit-content;
     
 .arrow {
     position:absolute;
-    top:1475px;
+    top:1385px;
     left:48%;
     width:2.55%;
-   height: 50px;
+   height: 35px;
     border: solid #f0e14a;
     border-width: 0 10px 10px 0;
     display: inline-block;
@@ -104,10 +104,10 @@ height:fit-content;
 
 .arrowtwo{
 position: absolute;
-    top: 1530px;
+    top: 1430px;
     left: 48%;
     width: 2.55%;
-    height: 50px;
+    height: 35px;
     border: solid #f0e14a;
     border-width: 0 10px 10px 0;
     display: inline-block;
@@ -115,10 +115,10 @@ position: absolute;
 }
 .arrowthree{
     position: absolute;
-        top: 1585px;
+        top: 1475px;
         left: 48%;
         width: 2.55%;
-        height: 50px;
+        height: 35px;
         border: solid #f0e14a;
         border-width: 0 10px 10px 0;
         display: inline-block;
@@ -128,7 +128,7 @@ position: absolute;
 
 .text{
     position:relative;
-    top: -300px;
+    top: -350px;
         left: 28%;
         color: #f0e14a;
         font-size:550%; 
@@ -142,6 +142,52 @@ position: absolute;
 
 
 /* for-medium-desktop-up */
-@media (min-width: 1400px) {}
+@media (min-width: 1400px) {
+
+.text {
+        position: relative;
+        top: -470px;
+        left: 29%;
+        color: #f0e14a;
+        font-size: 550%;
+        font-weight: 900;
+    }
+
+    .arrow {
+            position: relative;
+            top: -320px;
+            left: 46%;
+            width: 2.55%;
+            height: 35px;
+            border: solid #f0e14a;
+            border-width: 0 10px 10px 0;
+            display: inline-block;
+            padding: 3px;
+        }
+
+        .arrowtwo {
+            position: relative;
+            top: -285px;
+            left: 42.3%;
+            width: 2.55%;
+            height: 35px;
+            border: solid #f0e14a;
+            border-width: 0 10px 10px 0;
+            display: inline-block;
+            padding: 3px;
+        }
+
+                .arrowthree {
+                    position: relative;
+                    top: -245px;
+                    left: 38.7%;
+                    width: 2.55%;
+                    height: 35px;
+                    border: solid #f0e14a;
+                    border-width: 0 10px 10px 0;
+                    display: inline-block;
+                    padding: 3px;
+                }
+}
 
 

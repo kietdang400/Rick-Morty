@@ -146,7 +146,7 @@ grid-template-columns: 28% auto auto;
         }
 
      .card{
-        margin-bottom: 33%;
+        margin-bottom: 32%;
      }
          .grid-items .title{
             top:19%;
@@ -157,4 +157,8 @@ grid-template-columns: 28% auto auto;
 
 
 /* for-medium-desktop-up */
-@media (min-width: 1400px) {}
+@media (min-width: 1400px) {
+    .card {
+            margin-bottom: 35%;
+        }
+}

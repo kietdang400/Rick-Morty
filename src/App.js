@@ -57,16 +57,21 @@ const scrolling=(state)=>{
 setScrollDownState(state);
 }
 
-console.log(window.innerWidth);
+const[scrollDownDisplay,setScrollDownDisplay]=useState(true)
+const scrollDisplay=(state)=>{
+setScrollDownDisplay(state)
+}
 
+console.log(window.innerWidth);
+console.log(window.innerHeight);
   return (
     
     <div className="App">
       {load?<img className="portal" src={Portal} alt="portal"></img>:<NavBar locationPicked={pickLocation}></NavBar>}
       {!load&&<ImageHandler id={location}></ImageHandler>}
-      {!load&&<DisplayInformation information={information} scrollDown={scrolling} ></DisplayInformation>}
+      {!load&&<DisplayInformation information={information} scrollDown={scrolling} scrollDownDisplayer={scrollDisplay}></DisplayInformation>}
       {scrollDownState&&<div className="arrowGroup">
-      <div class="text"><p>Scroll Down</p></div>
+      {scrollDownDisplay&&<div class="text"><p>Scroll Down</p></div>}
       <i class="arrow down"></i>
       <i class="arrowtwo down" ></i>
       <i class="arrowthree down" ></i>

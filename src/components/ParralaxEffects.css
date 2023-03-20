@@ -1,6 +1,6 @@
 
 .parralax{
-    top:1715px;
+    top:1607px;
     margin-top: 3%;
     
 }
@@ -11,4 +11,16 @@ h2 {
     top: 200px;
     font-size: 100px;
     color: #f0e14a;
+}
+
+@media (min-width: 1200px) {
+
+}
+
+@media (min-width: 1400px) {
+    .parralax {
+            top: 1550px;
+            margin-top: 3%;
+    
+        }
 }
