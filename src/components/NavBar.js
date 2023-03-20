@@ -33,7 +33,7 @@ props.locationPicked(place);
     <a href="#about" onClick={()=>{selectPlace(9)}} value='9'>Purge Planet</a>
     <a href="#about" onClick={()=>{selectPlace(35)}} value='35'>Planet Squanch</a>
   <a href="javascript:void(0);" className="icon" onClick={navBarToggle}>
-    <i className="fa fa-bars"></i>
+    <i className="fa fas fa-bars" ></i>
   </a>
 </div>
 </div>

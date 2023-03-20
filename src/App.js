@@ -57,6 +57,7 @@ const scrolling=(state)=>{
 setScrollDownState(state);
 }
 
+console.log(window.innerWidth);
 
   return (
     

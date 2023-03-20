@@ -47,16 +47,19 @@ grid-template-columns: 28% auto auto;
 
 .grid-items {
     position:relative;
-    left:89%;
+    left:100%;
+    height:56%;
+    margin-top:25%
 }
 .grid-items.card1{
     position: relative;
-    top:5px;
-    width:160%;
-    height:60%;
+    top:15px;
+    width:150%;
+    height:47%;
     padding-top: 4px;
-    padding-bottom: 25px;
-    left:62%;
+    padding-bottom: 30px;
+    left:77%;
+    
 }
 
 }
@@ -70,16 +73,17 @@ grid-template-columns: 28% auto auto;
         }
     .grid-items {
             position: relative;
-            left: 160%;
+            left: 115%;
+            margin-top: 25%;
         }
     
         .grid-items.card1 {
             position: relative;
-            top: 5px;
+            top: 15px;
             width: 160%;
-            height: 67%;
+            height: 56%;
             padding-top: 4px;
-            left: 160%;
+            left: 120%;
         }
 }
 
@@ -93,16 +97,16 @@ grid-template-columns: 28% auto auto;
     .grid-items {
             position: relative;
             left: 140%;
-            width: 70%;
+            width: 80%;
         }
     
         .grid-items.card1 {
             position: relative;
             top: -2px;
-            width: 90%;
-            height: 65%;
+            width: 85%;
+            height: 55%;
             padding-top: 4px;
-            left: 120%;
+            left: 135%;
         }
 }
 
@@ -110,27 +114,27 @@ grid-template-columns: 28% auto auto;
 /* for-desktop-up */
 @media (min-width: 1200px) {
     .grid-container {
-            column-gap: 180px;
-            grid-template-columns: 30% 30% 30%;
+            column-gap: 150px;
+            grid-template-columns: 35% 35% 35%;
            
         }
     
         .grid-items {
             position: relative;
-            left: 90%;
+            left: 37%;
             width: 140%;
-            height:120%;
-            top:-125px;
+            height:90%;
+            top:-115px;
             font-size:x-large;
         }
     
         .grid-items.card1 {
             position: relative;
-            top: -125px;
+            top: -115px;
             width: 140%;
-            height: 125%;
+            height: 93%;
             padding-top: 4px;
-            left: 90%;
+            left: 35%;
             font-size:x-large;
         }
 

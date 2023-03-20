@@ -42,17 +42,18 @@
     .image {
             position: relative;
             height: 550px;
-            width: 50%;
+            width: 45%;
             border-radius: 100%;
             margin-top: 4%;
             margin-bottom: 4%;
-            left: -5%;
+            margin-left:8%;
+            left: -20%;
             top:155px;
         }
     .popUp {
         position:relative;
-        left:27%;
-        top:-205px;
+        left:20%;
+        top:-160px;
     }
 }
 

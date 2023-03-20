@@ -24,17 +24,6 @@ const populationFunction=(population)=>{
 setPopulation(population)
 }
 
-// population={props.information.Residents[0].length} population is unknown when DOM renders causes page to not load
-/*{characters.map(character=>{
-        return<Character 
-        key={Math.random()*1000}
-        name={character.data.name} 
-        species={character.data.species} 
-        image={character.data.image}
-        gender={character.data.gender}
-        status={character.data.status}>
-        </Character>})}*/
-        // 
         const scrollDownFunction=(state)=>{
 props.scrollDown(state)
         }
