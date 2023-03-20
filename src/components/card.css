@@ -158,7 +158,32 @@ grid-template-columns: 28% auto auto;
 
 /* for-medium-desktop-up */
 @media (min-width: 1400px) {
+.grid-container {
+        column-gap: 160px;
+        grid-template-columns: 35% 35% 35%;
+
+    }
+
+        .grid-items {
+            position: relative;
+            left: 48%;
+            width: 140%;
+            height: 90%;
+            top: -115px;
+            font-size: x-large;
+        }
+
+         .grid-items.card1 {
+             position: relative;
+             top: -115px;
+             width: 140%;
+             height: 93%;
+             padding-top: 4px;
+             left: 48%;
+             font-size: x-large;
+         }
+
     .card {
-            margin-bottom: 35%;
+            margin-bottom: 37%;
         }
 }

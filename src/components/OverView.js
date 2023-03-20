@@ -38,7 +38,7 @@ setDescriptionSummary("Jerry chews NASA out about Pluto. The Plutonians decided 
 break;
      case "Purge Planet":
 setDescriptionOverView(" It is a planet that exists in the Dimension C-131, and is home of cat-like humanoids. On this planet, everyone is very blissful and happy toward everyone because every year there is a purge, where all laws are suspended for the night and everyone is free to kill whoever they want, releasing their anger without consequences.")
-setDescriptionSummary();    
+setDescriptionSummary("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ");    
 break;
     case "Planet Squanch":
 setDescriptionOverView("It is the planet where Squanchy comes from and it is 6,000 light years away from Earth.Everything seen on Planet Squanch is either undisturbed nature or houses of inhabitants. ")

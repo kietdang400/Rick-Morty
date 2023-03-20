@@ -145,48 +145,36 @@ position: absolute;
 @media (min-width: 1400px) {
 
 .text {
-        position: relative;
-        top: -470px;
-        left: 29%;
-        color: #f0e14a;
-        font-size: 550%;
-        font-weight: 900;
+    top:-500px;
+        display: block;
+        margin-left:4%;
+        margin-right: auto;        
+       
     }
 
     .arrow {
-            position: relative;
-            top: -320px;
-            left: 46%;
-            width: 2.55%;
-            height: 35px;
-            border: solid #f0e14a;
-            border-width: 0 10px 10px 0;
-            display: inline-block;
-            padding: 3px;
+                top: 1250px;
+                display: block;
+                margin-left: 1%;
+                margin-right: auto;
+                margin-top: 10%;
         }
 
         .arrowtwo {
-            position: relative;
-            top: -285px;
-            left: 42.3%;
-            width: 2.55%;
-            height: 35px;
-            border: solid #f0e14a;
-            border-width: 0 10px 10px 0;
-            display: inline-block;
-            padding: 3px;
+        top: 1300px;
+            display: block;
+            margin-left: 1%;
+            margin-right: auto;
+            margin-top: 10%;
         }
 
                 .arrowthree {
-                    position: relative;
-                    top: -245px;
-                    left: 38.7%;
-                    width: 2.55%;
-                    height: 35px;
-                    border: solid #f0e14a;
-                    border-width: 0 10px 10px 0;
-                    display: inline-block;
-                    padding: 3px;
+                    top: 1350px;
+                        display: block;
+                        margin-left: 1%;
+                        margin-right: auto;
+                        margin-top: 10%;
+                       
                 }
 }
 
