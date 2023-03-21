@@ -184,6 +184,7 @@ grid-template-columns: 28% auto auto;
          }
 
     .card {
+        margin-top: -1%;
             margin-bottom: 37%;
         }
 }

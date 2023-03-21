@@ -5,7 +5,7 @@ import './card.css'
 const card=(props)=>{
 
     return(
-        <div className="card">
+        <div className="card" >
             <div className="grid-container">
             <div className="grid-items card1"><label className="title"> <u>Type </u></label>
             <div className="content">{props.type1}</div>

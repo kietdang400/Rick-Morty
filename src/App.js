@@ -63,7 +63,7 @@ setScrollDownDisplay(state)
 }
 
 console.log(window.innerWidth);
-console.log(window.innerHeight);
+
   return (
     
     <div className="App">
@@ -71,7 +71,7 @@ console.log(window.innerHeight);
       {!load&&<ImageHandler id={location}></ImageHandler>}
       {!load&&<DisplayInformation information={information} scrollDown={scrolling} scrollDownDisplayer={scrollDisplay}></DisplayInformation>}
       {scrollDownState&&<div className="arrowGroup">
-      {scrollDownDisplay&&<div class="text"><p>Scroll Down</p></div>}
+      {scrollDownDisplay&&<div className="text"><p style={{textAlign:'center'}}>Scroll Down</p></div>}
       <i class="arrow down"></i>
       <i class="arrowtwo down" ></i>
       <i class="arrowthree down" ></i>

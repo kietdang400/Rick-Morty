@@ -62,6 +62,9 @@ prop.scrollingDown(scrollDown);
 
 const[scrollDisplay,setScrollDisplay]=useState(true);
 prop.ScrollDown(scrollDisplay);
+
+
+
     return(
         <div className="Overview">
           <div className="border">
@@ -94,7 +97,7 @@ return<Slide><Character
         <button className="OverView-Button"onClick={()=>{return setDescriptionButton(false), setSummaryButton(true),setScrollDown(true), setCharacterButton(false),setScrollDisplay(false)}}>Summary</button>
         <button className="OverView-Button"onClick={()=>{return setDescriptionButton(false), setSummaryButton(false),setScrollDown(false), setCharacterButton(true),setScrollDisplay(false)}}>Characters</button>
 </div>
-        <Card type1={prop.type} dimension1={prop.dimension} population={prop.characters.length}></Card>
+        <Card type1={prop.type} dimension1={prop.dimension} population={prop.characters.length} ></Card>
         </div>
     )
 }
