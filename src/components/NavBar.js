@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React,{useEffect, useState} from "react";
 import './NavBar.css'
 const NavBar=(props)=>{
 
@@ -11,8 +11,13 @@ const NavBar=(props)=>{
   }
     }
 
-const[place,selectPlace]=useState('');
 
+
+const[place,selectPlace]=useState('');
+useEffect(()=>{
+var x = document.getElementById("myTopnav");
+ x.className = "topnav";
+},[place])
 
 console.log(place);
 

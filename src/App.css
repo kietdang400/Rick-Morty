@@ -11,7 +11,25 @@ height:fit-content;
 }
 
 /* for-phone-only */
-@media (max-width: 599px) {
+
+@media (min-width:320px) {
+.App {
+        width: 100%;
+        height:fit-content;
+    }
+
+.portal {
+    position: relative;
+    width: 55%;
+    height: 20%;
+    left: 23%;
+    top: 190px;
+    padding-top: 42%;
+    padding-bottom: 200%;
+}
+}
+    
+@media(min-width: 480px){
 .App{
     width: 100%;
 }
@@ -21,9 +39,9 @@ height:fit-content;
     width:50%;
     height:50%;
     left:23%;
-    top:-10px;
+    top:30px;
     padding-top: 42%;
-    padding-bottom:48%;
+    padding-bottom:80%;
 }
 }
 
@@ -39,9 +57,9 @@ height:fit-content;
        width: 50%;
        height: 50%;
        left: 23%;
-       top: -20px;
+       top: 100px;
        padding-top: 25%;
-       padding-bottom: 23%;
+       padding-bottom: 100%;
    }
 
 }
@@ -61,7 +79,7 @@ height:fit-content;
        left: 23%;
        top: -10px;
        padding-top: 20%;
-       padding-bottom: 10%;
+       padding-bottom: 30%;
    }
    
 }
@@ -79,15 +97,27 @@ height:fit-content;
             width: 30%;
             height: 30%;
             left: 33%;
-            top: -3px;
+            top: 150px;
             padding-top: 10%;
-            padding-bottom: 12%;
+            padding-bottom: 100%;
         }
+
+                .arrowfour {
+                    position: absolute;
+                        top: 1320px;
+                        left: 48%;
+                        width: 2.55%;
+                        height: 35px;
+                        border: solid #f0e14a;
+                        border-width: 0 10px 10px 0;
+                        display: inline-block;
+                        padding: 3px;
+                }
                 
     
 .arrow {
-    position:absolute;
-    top:1385px;
+    position:relative;
+    top:-305px;
     left:48%;
     width:2.55%;
    height: 35px;
@@ -103,9 +133,9 @@ height:fit-content;
 }
 
 .arrowtwo{
-position: absolute;
-    top: 1430px;
-    left: 48%;
+position: relative;
+    top: -265px;
+    left: 44%;
     width: 2.55%;
     height: 35px;
     border: solid #f0e14a;
@@ -114,9 +144,9 @@ position: absolute;
     padding: 3px;
 }
 .arrowthree{
-    position: absolute;
-        top: 1475px;
-        left: 48%;
+    position: relative;
+    top: -225px;
+        left: 40.2%;
         width: 2.55%;
         height: 35px;
         border: solid #f0e14a;
@@ -128,8 +158,8 @@ position: absolute;
 
 .text{
     position:relative;
-    top: -350px;
-        left: 28%;
+    top: -410px;
+        left: 0%;
         color: #f0e14a;
         font-size:550%; 
         font-weight: 900;  
@@ -144,40 +174,53 @@ position: absolute;
 /* for-medium-desktop-up */
 @media (min-width: 1400px) {
 
+.App{
+    height: 250%;
+}
+
 .text {
     font-size: 525%;
-    top:-500px;
+    top:-490px;
         display: block;
-       
-        margin-right: 56%;        
+        margin-right: 0%; 
+             
        
     }
 
+ .arrowfour {
+     top: 1200px;
+     display: block;
+     margin-left: 0%;
+     margin-right: auto;
+     margin-top: 10%;
+     height: 39px;
+ }
+
     .arrow {
-                top: 1250px;
+                top: 280px;
                 display: block;
                 margin-left: 0%;
                 margin-right: auto;
                 margin-top: 10%;
-                height: 40px;
+                height: 39px;
         }
 
         .arrowtwo {
-        top: 1300px;
+        top: 150px;
             display: block;
-            margin-left: 0%;
+            margin-left: 3.9%;
             margin-right: auto;
             margin-top: 10%;
-            height: 40px;
+            height: 39px;
         }
 
                 .arrowthree {
-                    top: 1350px;
+                    top: 30px;
                         display: block;
-                        margin-left: 0%;
+                        margin-left: 7.7%;
                         margin-right: auto;
-                        margin-top: 10%;
-                        height: 40px;
+                        margin-top: 9%;
+                        height: 39px;
                 }
 }
 

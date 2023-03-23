@@ -49,7 +49,9 @@ let information={
 
 useEffect(()=>{
 setLoad(true);
-setTimeout(setLoad,2000);
+setTimeout(setLoad,1000);
+setScrollDownDisplay(false);
+setTimeout(setScrollDownDisplay,1000);
   },[])
 
   const[scrollDownState,setScrollDownState]=useState(true)
@@ -72,9 +74,9 @@ console.log(window.innerWidth);
       {!load&&<DisplayInformation information={information} scrollDown={scrolling} scrollDownDisplayer={scrollDisplay}></DisplayInformation>}
       {scrollDownState&&<div className="arrowGroup">
       {scrollDownDisplay&&<div className="text"><p style={{textAlign:'center'}}>Scroll Down</p></div>}
-      <i class="arrow down"></i>
-      <i class="arrowtwo down" ></i>
-      <i class="arrowthree down" ></i>
+      {scrollDownDisplay&&<i class="arrow down"></i>}
+      {scrollDownDisplay&&<i class="arrowtwo down" ></i>}
+      {scrollDownDisplay&&<i class="arrowthree down" ></i>}
       </div>}
       {window.innerWidth>1200&&<div><ParralaxEffect information={information}></ParralaxEffect></div>}
     </div>

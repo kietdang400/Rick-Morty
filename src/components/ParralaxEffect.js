@@ -72,11 +72,11 @@ useEffect(()=>{
             setIMG3(Cronenberg);
             setContent3("People started turning into Cronenberg");
             setIMG4(RickandMortyDead);
-            setContent4("Rick and Morty jumps dimension and bury their dead selves from that dimension");
+            setContent4("Rick and Morty jump dimension");
         break;
           case "Citadel of Ricks":
             setIMG1(CitadelOfRicksP1);
-            setContent1("Multiple Rick and Morty living in the Citadel.");
+            setContent1("Many Rick and Morty living in the Citadel.");
             setIMG2(CitadelOfRicksP2);
             setContent2("The Ricks are divided into different classes based on their level of intelligence.");
             setIMG3(CitadelOfRicksP3);
@@ -88,7 +88,7 @@ useEffect(()=>{
             setIMG1(SnakePlanetP1);
             setContent1("Planet is inhabited by highly advanced and intelligent snakes.");
             setIMG2(SnakePlanetP2);
-            setContent2("Snake bites Morty and Mort returns the snake.");
+            setContent2("Snake bites Morty and Morty returns the snake.");
             setIMG3(SnakePlanetP3);
             setContent3("Snake realize they are not alone in the universe and tries to kill Morty.");
             setIMG4(SnakePlanetP4);
@@ -128,11 +128,11 @@ useEffect(()=>{
             setIMG1(Squanchy1);
             setContent1("Family get's invited to Birdperson and Tammy's wedding");
             setIMG2(Squanchy2);
-            setContent2("BirdPerson and Tammy marries on the beach");
+            setContent2("BirdPerson and Tammy marry on the beach");
             setIMG3(Squanchy3);
             setContent3("Tammy reveals shes a Galatic Agent");
             setIMG4(Squanchy4);
-            setContent4("Rick turns himself in to the Galactic Federation to protect his family");
+            setContent4("Rick turns himself into the Galactic Federation to protect his family");
         break;
 
           case "Immortality Field Resort":

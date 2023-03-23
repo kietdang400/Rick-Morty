@@ -14,13 +14,17 @@ h2 {
 }
 
 @media (min-width: 1200px) {
+.parralax {
+        top: 1550px;
+        margin-top: 3.5%;
 
+    }
 }
 
 @media (min-width: 1400px) {
     .parralax {
             top: 1550px;
-            margin-top: 6%;
+            margin-top: 3.5%;
     
         }
 }

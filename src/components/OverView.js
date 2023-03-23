@@ -22,7 +22,7 @@ setDescriptionSummary("Dimension C-137 is first mentioned in 'Close Rick-Counter
 break;
      case "Citadel of Ricks":
 setDescriptionOverView("The Citadel was populated by Ricks and Mortys from across the Central Finite Curve and utilised as a leisure place, meeting point and place of protection for many Ricks and Mortys. However, the Citadel also served as a permanent residence for an untold number of Ricks and Mortys that decided to settle at there.");
-setDescriptionSummary("Through various universes, Rick has been involved through resistance groups against the Galactic Federation, as well as other groups who consider his genius a threat, such as galactic terrorists, sub-galactic dictators and most of the entire Intergalactic government.");    
+setDescriptionSummary("Through various universes, Rick has been involved through resistance groups against the Galactic Federation, as well as other groups who consider his genius a threat, such as galactic terrorists, sub-galactic dictators and most of the entire Intergalactic government. In the Rick and Morty episode 'The Ricklantis Mixup,' the episode follows different storylines that take place within the Citadel of Ricks, revealing a darker side of the Ricks and Mortys' society. The episode features the election of a new president, the struggles of a Morty cop, and a rebellion led by a group of Mortys.");    
 break;
      case "Snake Planet":
      setDescriptionOverView("Inhabited by sapient Snakes, which were later reverted out of existence by Time Cops after the snakes started thoughtlessly meddling with time travel technology.");
@@ -30,7 +30,7 @@ break;
      break;
      case "Unity's Planet":
 setDescriptionOverView("The planet Unity was entirely assimilated, and plans to use to assimilate the Galactic Federation. However, Unity left the planet with its people following certain events with Rick Sanchez. Unity's current plans for the planet are unknown due to the Federation's destruction in 'The Rickshank Rickdemption'.");
-setDescriptionSummary("Rick stays with Unity for a while longer, but after leaving to use the bathroom, emerges to find that Unity has deserted the city (and possibly the planet) and written breakup letters across every surface. It confesses its love for Rick, but ultimately concedes that they cannot be together.");    
+setDescriptionSummary("In the Rick and Morty episode 'Auto Erotic Assimilation,' Rick stays with Unity for a while longer, but after leaving to use the bathroom, emerges to find that Unity has deserted the city (and possibly the planet) and written breakup letters across every surface. It confesses its love for Rick, but ultimately concedes that they cannot be together. The episode ends with Rick attempting suicide, but ultimately failing due to his advanced technology.");    
 break;
      case "Pluto":
 setDescriptionOverView("Pluto is a dwarf planet located in Earth's Solar System. inhabited by sentient Plutonians. The planet is first mentioned in Something Ricked This Way Comes, when Jerry and Morty Smith are abducted and transported there.")
@@ -38,14 +38,14 @@ setDescriptionSummary("Jerry chews NASA out about Pluto. The Plutonians decided 
 break;
      case "Purge Planet":
 setDescriptionOverView(" It is a planet that exists in the Dimension C-131, and is home of cat-like humanoids. On this planet, everyone is very blissful and happy toward everyone because every year there is a purge, where all laws are suspended for the night and everyone is free to kill whoever they want, releasing their anger without consequences.")
-setDescriptionSummary("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ");    
+setDescriptionSummary("In the 'Purge Planet' episode of Rick and Morty, the duo travels to a planet where all crime is legal for one night each year. Morty becomes enamored with a local girl and gets caught up in the violent chaos. Meanwhile, Rick tries to acquire a valuable serum, leading to his own set of problems. They ended up participating in the purge by killing some rich magdalians and common magdalians with some of Rick's gadgets called 'Purge Suit'.");    
 break;
     case "Planet Squanch":
 setDescriptionOverView("It is the planet where Squanchy comes from and it is 6,000 light years away from Earth.Everything seen on Planet Squanch is either undisturbed nature or houses of inhabitants. ")
 setDescriptionSummary("Birdperson and Tammy invited a large group of friends and acquaintances to their wedding, all of which were criminals. The Smith Family attended the wedding against Rick's wishes. Squanchy wed Birdperson and Tammy on a beach before a setting star.Later, Tammy exposed herself as an undercover agent for the Galactic Federation and shot Birdperson before Gromflomites crashed in through the roof and raided the event. The Smith family managed to escape in a flying catering van.");   
 break;
      case "Immortality Field Resort":
-setDescriptionOverView("A luxury resort built inside an immortality field.  Rick brought Jerry here in the episode 'The Whirly Dirly Conspiracy' on Morty's request.")
+setDescriptionOverView("A luxury resort built inside an immortality field.  Rick brought Jerry here in the episode 'The Whirly Dirly Conspiracy' on Morty's request. There is no direct mention of the immortality resort in 'The Whirly Dirly Conspiracy.' The episode focuses on Rick and Jerry's adventure at an alien resort with a deadly theme park ride. The immortality resort is featured in a separate episode called 'Big Trouble in Little Sanchez'.")
 setDescriptionSummary("By Morty's wish, Rick brought Jerry to this resort in order to cheer him up. Once they had arrived Rick was attacked and killed by Shnoopy Bloopers, who in turn was killed by Rick; before resurrecting back to life due to the immortality field. Jerry would later be forced into a backroom by Risotto Groupon and his henchmen in a plot against Rick. This lead Jerry and Rick onto the Whirly Dirly, a popular park ride at the resort, where Risotto had positioned assassins to kill Rick. Jerry would then get cold feet and save Rick , with Rick defeating both Risotto's assassins and henchmen, as well as destroying the immortality field.");   
 break;
 }
