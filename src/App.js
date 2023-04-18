@@ -70,14 +70,16 @@ console.log(window.innerWidth);
     
     <div className="App">
       {load?<img className="portal" src={Portal} alt="portal"></img>:<NavBar locationPicked={pickLocation}></NavBar>}
-      {!load&&<ImageHandler id={location}></ImageHandler>}
-      {!load&&<DisplayInformation information={information} scrollDown={scrolling} scrollDownDisplayer={scrollDisplay}></DisplayInformation>}
+ {!load&&<ImageHandler id={location}></ImageHandler>}
+     {!load&&<DisplayInformation information={information} scrollDown={scrolling} scrollDownDisplayer={scrollDisplay}></DisplayInformation>}
+    
       {scrollDownState&&<div className="arrowGroup">
-      {scrollDownDisplay&&<div className="text"><p style={{textAlign:'center'}}>Scroll Down</p></div>}
+      {scrollDownDisplay&&<div className="text"><p style={{textAlign:'center'}}>{window.innerWidth>=1200&&"Scroll Down"}</p></div>}
       {scrollDownDisplay&&<i class="arrow down"></i>}
       {scrollDownDisplay&&<i class="arrowtwo down" ></i>}
       {scrollDownDisplay&&<i class="arrowthree down" ></i>}
       </div>}
+     
       {window.innerWidth>1200&&<div><ParralaxEffect information={information}></ParralaxEffect></div>}
     </div>
     

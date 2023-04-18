@@ -55,19 +55,19 @@
 @media (min-width: 1200px) {
     .image {
             position: relative;
-            height: 550px;
-            width: 45%;
+            height: 500px;
+            width: 35%;
             border-radius: 100%;
             margin-top: 4%;
             margin-bottom: 4%;
-            margin-left:8%;
-            left: -20%;
+            margin-left:12%;
+            left: -19%;
             top:155px;
         }
     .popUp {
         position:relative;
         left:20%;
-        top:-160px;
+        top:-130px;
     }
 }
 
@@ -82,6 +82,6 @@
 
         .popUp {
             top: -170px;
-            left:21%;
+            left:25%;
         }
 }

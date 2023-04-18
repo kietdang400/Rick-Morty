@@ -17,7 +17,9 @@ import Whirly from '../IMG/Whirly.png';
 import Plutonium from '../IMG/Plutonium.png';
 import Purgers from '../IMG/Purgers.png';
 import squanch from '../IMG/Squanchy.png';
-import './ImageHandler.css'
+import './ImageHandler.css';
+
+
 
 const ImageHandler=(props)=>{
 
